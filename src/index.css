@@ -1,0 +1,31 @@
+:root {
+  --bgcolor: #FFFFFF;
+  --contrast-bgcolor: #000000;
+  --primary-text-color: #000000;
+  --secondary-text-color: #666666;
+  --contrast-text-color: var(--bgcolor);
+  --loading-bg: #f2f4f5;
+  --accent-color: #ff0000;
+  --contrast-accent-color: #3e5bee;
+  --red-color: #FF0000;
+  --green-color: #3BB33B;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+a:visited, a {
+  color: inherit;
+}
+
+.container {
+  padding: 24px;
+  min-height: 100vh;
+}

@@ -1,0 +1,22 @@
+.btn {
+  background-color: transparent;
+  border: none;
+  color: var(--contrast-text-color);
+  font-size: 2.2rem;
+  display: flex;
+  cursor: pointer;
+  transition: all 0.3s;
+  will-change: filter;
+  filter: drop-shadow(var(--primary-text-color) 0px 2px 0) drop-shadow(var(--accent-color) 0px 2px 0);
+}
+
+.btn:active {
+  filter: drop-shadow(var(--primary-text-color) 0px 2px 0) drop-shadow(var(--contrast-accent-color) 0px 2px 0);
+  transform: scale(0.95);
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    filter: drop-shadow(var(--primary-text-color) 0px 2px 0) drop-shadow(var(--contrast-accent-color) 0px 2px 0);
+  }
+}

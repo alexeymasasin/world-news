@@ -1,0 +1,63 @@
+.header {
+  display: flex;
+  width: 100%;
+  padding: 24px 24px;
+  border-bottom: 1px solid #f2f4f5;
+  gap: 12px;
+  background-color: var(--contrast-bgcolor);
+  color: var(--contrast-text-color);
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  font-size: 40px;
+  font-weight: 600;
+
+}
+
+.title {
+  font-size: 36px;
+  text-shadow: var(--primary-text-color) 0px 2px 0, var(--accent-color) 0px 4px 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  transform: rotateX(-20deg) rotateY(5deg);
+  margin: 0 0 4px -3px;
+}
+
+.title_logo {
+  position: relative;
+  transition: filter 0.3s;
+  top: 2px;
+  font-size: 1.6rem;
+  filter: drop-shadow(var(--primary-text-color) 0px 2px 0) drop-shadow(var(--accent-color) 0px 3px 0);
+}
+
+.date {
+  font-size: 16px;
+}
+
+.title:active {
+  text-shadow: var(--primary-text-color) 0px 2px 0, var(--contrast-accent-color) 2px 4px 0;
+  transform: rotateX(-20deg) rotateY(5deg) scale(0.99);;
+}
+
+.title:active .title_logo {
+  filter: drop-shadow(var(--primary-text-color) 0px 2px 0) drop-shadow(var(--contrast-accent-color) 0px 3px 0);
+}
+
+@media (hover: hover) {
+  .title:hover {
+    text-shadow: var(--primary-text-color) 0px 2px 0, var(--contrast-accent-color) 2px 4px 0;
+  }
+
+  .title:hover .title_logo {
+    filter: drop-shadow(var(--primary-text-color) 0px 2px 0) drop-shadow(var(--contrast-accent-color) 0px 3px 0);
+  }
+}

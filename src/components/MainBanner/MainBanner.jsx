@@ -8,7 +8,7 @@ const MainBanner = ({item}) => {
       <Image image={item.urlToImage}/>
       <h3 className={styles.title}>{item.title}</h3>
       <p className={styles.extra}>
-        {timeAgoFormat(item.publishedAt)} by {item.author}
+        {timeAgoFormat(item.publishedAt)} от {item.author}
       </p>
     </div>
   );

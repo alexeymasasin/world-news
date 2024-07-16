@@ -13,7 +13,7 @@ const Main = () => {
     const fetchNews = async () => {
       try {
         const response = await getNews();
-        setNews(response['articles']);
+        setNews(response.news);
       } catch (err) {
         console.error(err);
       }

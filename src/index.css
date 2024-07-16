@@ -1,12 +1,14 @@
 :root {
-  --bgcolor: #FFFFFF;
-  --contrast-bgcolor: #000000;
-  --primary-text-color: #000000;
-  --secondary-text-color: #666666;
+  --bgcolor: #FCF7F4;
+  --contrast-bgcolor: #990012;
+  --primary-text-color: #080808;
+  --secondary-text-color: #5A5A5A;
   --contrast-text-color: var(--bgcolor);
-  --loading-bg: #f2f4f5;
-  --accent-color: #ff0000;
-  --contrast-accent-color: #3e5bee;
+  --loading-bg: #bbbbbb;
+
+  --accent-color: #333D7A;
+  --contrast-accent-color: #FCF7F4;
+
   --red-color: #FF0000;
   --green-color: #3BB33B;
 }

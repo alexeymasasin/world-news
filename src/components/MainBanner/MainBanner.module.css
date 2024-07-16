@@ -11,5 +11,5 @@
 
 .extra {
   font-size: 12px;
-  color: #6c7072;
+  color: var(--secondary-text-color);
 }

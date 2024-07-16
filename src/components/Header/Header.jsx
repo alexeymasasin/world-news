@@ -1,8 +1,9 @@
 import {dateFormat} from './../../helpers/dateFormat';
 import styles from './Header.module.css';
 import HeaderButton from '../UI/Header/Button.jsx';
-import {RiListSettingsLine, RiNewsFill} from 'react-icons/ri';
+import {RiNewsFill} from 'react-icons/ri';
 import {NavLink} from 'react-router-dom';
+import {RxHamburgerMenu} from 'react-icons/rx';
 
 const Header = () => {
   return (
@@ -15,7 +16,7 @@ const Header = () => {
         <p className={styles.date}>{dateFormat(new Date())}</p>
       </div>
       <div className={styles.right}>
-        <HeaderButton><RiListSettingsLine/></HeaderButton>
+        <HeaderButton><RxHamburgerMenu/></HeaderButton>
       </div>
     </header>
   );

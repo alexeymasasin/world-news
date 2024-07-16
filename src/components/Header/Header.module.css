@@ -36,7 +36,6 @@
 .title_logo {
   position: relative;
   transition: filter 0.3s;
-  top: 2px;
   font-size: 1.6rem;
 }
 

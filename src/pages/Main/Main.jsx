@@ -7,8 +7,6 @@ import NewsList from '../../components/NewsList/NewsList.jsx';
 const Main = () => {
   const [news, setNews] = useState([]);
 
-  console.log(news);
-
   useEffect(() => {
     const fetchNews = async () => {
       try {

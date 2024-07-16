@@ -5,10 +5,10 @@ import {timeAgoFormat} from '../../helpers/timeAgoFormat.js';
 const MainBanner = ({item}) => {
   return (
     <div className={styles.banner}>
-      <Image image={item.urlToImage}/>
+      <Image image={item.image}/>
       <h3 className={styles.title}>{item.title}</h3>
       <p className={styles.extra}>
-        {timeAgoFormat(item.publishedAt)} от {item.author}
+        {timeAgoFormat(item.published)} от {item.author}
       </p>
     </div>
   );

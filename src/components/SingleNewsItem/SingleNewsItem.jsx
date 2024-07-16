@@ -5,11 +5,11 @@ const SingleNewsItem = ({item}) => {
   return (
     <li className={styles.item}>
       <div className={styles.image}
-           style={{backgroundImage: `url(${item.urlToImage})`}}></div>
+           style={{backgroundImage: `url(${item.image})`}}></div>
       <div className={styles.info}>
         <h3 className={styles.title}>{item.title}</h3>
         <p className={styles.extra}>
-          {timeAgoFormat(item.publishedAt)} by {item.author}
+          {timeAgoFormat(item.published)} by {item.author}
         </p>
       </div>
     </li>

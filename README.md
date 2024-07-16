@@ -28,7 +28,6 @@ The app will now be running at [http://localhost:5173/](http://localhost:5173/).
 - Vite
 - React Router
 - React Icons
-- Framer Motion
 - I18Next
 - UUID
 - SweetAlert2

@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+  gap: 6px;
+  width: 100%;
+}
+
+.btn_list {
+  gap: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  font-size: 18px;
+  min-width: 34px;
+  min-height: 34px;
+  flex: 1;
+}
+
+.arrow {
+  font-size: 28px;
+  min-width: 40px;
+  min-height: 34px;
+}
+
+.btn, .arrow {
+  border: none;
+  background-color: var(--contrast-bgcolor);
+  color: var(--contrast-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s;
+  user-select: none;
+  box-shadow: transparent 0 0 10px;
+}
+
+.btn:active, .arrow:active {
+  transform: scale(1.2);
+  box-shadow: var(--bgcolor) 0 0 10px 2px;
+}

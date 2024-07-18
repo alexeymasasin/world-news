@@ -7,6 +7,7 @@ export const getNews = async ({
   page_number = 1,
   page_size = 8,
   category = 'All',
+  keywords,
 }) => {
   try {
     const response = await axios.get(
@@ -16,6 +17,7 @@ export const getNews = async ({
           page_size,
           page_number,
           category,
+          keywords,
         },
       });
     return response.data;
@@ -24,8 +26,7 @@ export const getNews = async ({
   }
 };
 
-export const getCategories = async (
-  language = 'qwe', page_number = 1, page_size = 8) => {
+export const getCategories = async () => {
   try {
     const response = await axios.get(
       `${BASE_URL}available/categories`, {

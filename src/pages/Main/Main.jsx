@@ -7,15 +7,20 @@ import Skeleton from '../../components/Skeleton/Skeleton.jsx';
 import Pagination from '../../components/Pagination/Pagination.jsx';
 import CategoriesSlider
   from '../../components/CetegoriesSlider/CategoriesSlider.jsx';
+import Search from '../../components/Search/Search.jsx';
+import {useDebounce} from '../../hooks/useDebounce.js';
 
 const Main = () => {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const [categories, setCategories] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState(['All']);
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [keywords, setKeywords] = useState('');
   const totalPages = 15;
   const pageSize = 10;
+
+  const debouncedKeywords = useDebounce(keywords, 750);
 
   const fetchNews = async (currentPage) => {
     try {
@@ -24,6 +29,7 @@ const Main = () => {
         page_number: currentPage,
         page_size: pageSize,
         category: selectedCategory === 'All' ? null : selectedCategory,
+        keywords: debouncedKeywords,
       });
       setNews(response.news);
       setLoading(false);
@@ -47,7 +53,7 @@ const Main = () => {
 
   useEffect(() => {
     fetchNews(currentPage);
-  }, [currentPage, selectedCategory]);
+  }, [currentPage, selectedCategory, debouncedKeywords]);
 
   const nextPageHandler = () => {
     if (currentPage < totalPages) {
@@ -74,6 +80,8 @@ const Main = () => {
       <CategoriesSlider categories={categories}
                         selectedCategory={selectedCategory}
                         setSelectedCategory={setSelectedCategory}/>
+
+      <Search keywords={keywords} setKeywords={setKeywords}/>
 
       {news.length > 0 && !loading
         ? (<MainBanner item={news[0]}/>)

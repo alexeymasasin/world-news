@@ -9,7 +9,7 @@ const SingleNewsItem = ({item}) => {
       <div className={styles.info}>
         <h3 className={styles.title}>{item.title}</h3>
         <p className={styles.extra}>
-          {timeAgoFormat(item.published)} от {item.author}
+          {timeAgoFormat(item.published)} by {item.author}
         </p>
       </div>
     </li>

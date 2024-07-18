@@ -3,6 +3,7 @@
   --contrast-bgcolor: #990012;
   --primary-text-color: #080808;
   --secondary-text-color: #5A5A5A;
+  --grey: #e5e5e5;
   --contrast-text-color: var(--bgcolor);
   --loading-bg: #bbbbbb;
 

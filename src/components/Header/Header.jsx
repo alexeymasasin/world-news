@@ -10,7 +10,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.left}>
         <NavLink to="/">
-          <h1 className={styles.title}>TECH NEWS <RiNewsFill
+          <h1 className={styles.title}>WORLD NEWS <RiNewsFill
             className={styles.title_logo}/></h1>
         </NavLink>
         <p className={styles.date}>{dateFormat(new Date())}</p>

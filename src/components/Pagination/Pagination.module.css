@@ -2,6 +2,7 @@
   display: flex;
   gap: 6px;
   width: 100%;
+  justify-content: center;
 }
 
 .btn_list {
@@ -19,7 +20,7 @@
 }
 
 .arrow {
-  font-size: 28px;
+  font-size: 24px;
   min-width: 40px;
   min-height: 34px;
 }
@@ -41,4 +42,10 @@
 .btn:active, .arrow:active {
   transform: scale(1.2);
   box-shadow: var(--bgcolor) 0 0 10px 2px;
+}
+
+.btn:disabled {
+  pointer-events: none;
+  background-color: var(--loading-bg);
+  color: var(--primary-text-color);
 }

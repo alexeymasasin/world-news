@@ -1,4 +1,4 @@
-<h1> Tech News App (React.js) </h1>
+<h1> World News App (React.js) </h1>
 
 <p>
 Welcome to my Tech News App – a simple news-web application developed & designed by me to help you 

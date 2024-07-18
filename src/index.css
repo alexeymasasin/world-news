@@ -3,17 +3,17 @@
   --contrast-bgcolor: #990012;
   --primary-text-color: #080808;
   --secondary-text-color: #5A5A5A;
+  --grey: #e5e5e5;
   --contrast-text-color: var(--bgcolor);
   --loading-bg: #bbbbbb;
-
-  --accent-color: #333D7A;
-  --contrast-accent-color: #FCF7F4;
 
   --red-color: #FF0000;
   --green-color: #3BB33B;
 }
 
 * {
+  backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
   -webkit-tap-highlight-color: transparent;
   margin: 0;
   padding: 0;
@@ -21,6 +21,15 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+}
+
+img {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 a:visited, a {

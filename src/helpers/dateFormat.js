@@ -5,5 +5,5 @@ export const dateFormat = date => {
     month: 'long',
     day: 'numeric',
   };
-  return date.toLocaleDateString('ru', options);
+  return date.toLocaleDateString('en-US', options);
 };

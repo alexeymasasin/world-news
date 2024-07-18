@@ -2,6 +2,10 @@
   display: flex;
   width: 100%;
   gap: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+  cursor: default;
 }
 
 .title {
@@ -26,4 +30,16 @@
   background-position: center;
   background-size: cover;
   flex-shrink: 0;
+}
+
+@media (hover: hover) {
+  .item:hover {
+    background-color: #00000022;
+  }
+}
+
+@media (hover: none) {
+  .item:active {
+    background-color: #00000022;
+  }
 }

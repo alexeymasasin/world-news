@@ -31,7 +31,8 @@ const Main = () => {
         category: selectedCategory === 'All' ? null : selectedCategory,
         keywords: debouncedKeywords,
       });
-      setNews(response.news);
+      const newsWithImage = response.news.filter(item => item.image !== 'None');
+      setNews(newsWithImage);
       setLoading(false);
     } catch (err) {
       console.error(err);

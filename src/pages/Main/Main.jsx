@@ -40,6 +40,15 @@ const Main = () => {
     }
   };
 
+  const goToFirstPageHandler = () => {
+    setCurrentPage(1);
+  };
+
+  const goToLastPageHandler = () => {
+    setCurrentPage(totalPages);
+  };
+
+  // deprecated at this moment but may me used in future
   const moveToPageHandler = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
@@ -56,7 +65,9 @@ const Main = () => {
 
       <Pagination currentPage={currentPage} nextPageHandler={nextPageHandler}
                   previousPageHandler={previousPageHandler}
-                  moveToPageHandler={moveToPageHandler}
+                  goToFirstPage={goToFirstPageHandler}
+                  goToLastPage={goToLastPageHandler}
+        // moveToPageHandler={moveToPageHandler}
                   totalPages={totalPages}/>
     </main>
   );

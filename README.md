@@ -7,7 +7,7 @@ stay up to date with the latest in technology by keeping all the big news right 
 
 ## Current Release
 
-App is available on this [Vercel Link](https://am-tech-news.vercel.app/)
+App is available on this [Vercel Link](https://am-world-news.vercel.app/)
 
 ## Local Installation
 

@@ -1,6 +1,7 @@
 import styles from './NewsList.module.css';
 import {v4 as uuidv4} from 'uuid';
 import SingleNewsItem from '../SingleNewsItem/SingleNewsItem.jsx';
+import componentWithSkeleton from '../../hocs/ComponentWithSkeleton.jsx';
 
 const NewsList = ({news}) => {
 
@@ -14,4 +15,6 @@ const NewsList = ({news}) => {
   );
 };
 
-export default NewsList;
+const NewsListWithSkeleton = componentWithSkeleton(NewsList, 'item', 10);
+
+export default NewsListWithSkeleton;

@@ -9,6 +9,10 @@ const CategoriesSlider = ({
 
   return (
     <div className={styles.wrapper}>
+      <button onClick={() => setSelectedCategory(null)}
+              className={!selectedCategory ? styles.active : styles.item}>
+        {capitalize('All')}
+      </button>
       {categories.map(category => {
         return (
           <button onClick={() => setSelectedCategory(category)}

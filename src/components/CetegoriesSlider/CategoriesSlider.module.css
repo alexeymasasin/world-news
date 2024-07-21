@@ -35,6 +35,7 @@
   border: 1px solid var(--grey);
   color: var(--primary-text-color);
   transition: all 0.3s;
+  user-select: none;
 }
 
 .active {

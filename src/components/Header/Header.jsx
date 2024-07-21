@@ -6,10 +6,12 @@ import {NavLink} from 'react-router-dom';
 import {RxHamburgerMenu} from 'react-icons/rx';
 
 const Header = () => {
+  const pageReloadHandler = window.location.reload;
+
   return (
     <header className={styles.wrapper}>
       <div className={styles.left}>
-        <NavLink to="/">
+        <NavLink onClick={pageReloadHandler} to="/">
           <h1 className={styles.title}>WORLD NEWS <RiNewsFill
             className={styles.title_logo}/></h1>
         </NavLink>

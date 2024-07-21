@@ -1,6 +1,6 @@
-import styles from './Image.module.css';
+import styles from './MainBannerImage.module.css';
 
-const Image = ({image}) => {
+const MainBannerImage = ({image}) => {
   return (
     <div className={styles.wrapper}>
       {image ? <img src={image} alt="Error: Image not Loaded"
@@ -9,4 +9,4 @@ const Image = ({image}) => {
   );
 };
 
-export default Image;
+export default MainBannerImage;

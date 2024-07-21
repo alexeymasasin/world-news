@@ -7,7 +7,7 @@ const NewsList = ({news}) => {
 
   return (
     <ul className={styles.list}>
-      {news.map((item, i) => {
+      {news?.map((item) => {
         const uniqueId = uuidv4();
         return <SingleNewsItem item={item} key={uniqueId}/>;
       })}

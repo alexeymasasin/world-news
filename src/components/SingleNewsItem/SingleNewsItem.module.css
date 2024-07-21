@@ -4,9 +4,13 @@
   gap: 12px;
   padding: 10px;
   border-radius: 6px;
-  transition: background-color 0.2s;
-  cursor: default;
+  transition: all 0.3s;
   border: 2px solid var(--grey);
+  cursor: pointer;
+}
+
+.item:active {
+  transform: translateY(-6px);
 }
 
 .title {

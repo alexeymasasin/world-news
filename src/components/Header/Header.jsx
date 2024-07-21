@@ -4,6 +4,7 @@ import HeaderButton from '../UI/Header/Button.jsx';
 import {RiNewsFill} from 'react-icons/ri';
 import {NavLink} from 'react-router-dom';
 import {RxHamburgerMenu} from 'react-icons/rx';
+import CurrenciesList from '../CurrenciesList/CurrenciesList.jsx';
 
 const Header = () => {
   const pageReloadHandler = window.location.reload;
@@ -16,6 +17,7 @@ const Header = () => {
             className={styles.title_logo}/></h1>
         </NavLink>
         <p className={styles.date}>{dateFormat(new Date())}</p>
+        <CurrenciesList/>
       </div>
       <div className={styles.right}>
         <HeaderButton><RxHamburgerMenu/></HeaderButton>

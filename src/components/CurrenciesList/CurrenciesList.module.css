@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  gap: 4px;
+  font-size: 13px;
+  align-items: baseline;
+}
+
+.divider {
+  border-right: 1px solid var(--bgcolor);
+  height: 10px;
+}

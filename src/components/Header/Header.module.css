@@ -14,12 +14,12 @@
 .left {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .right {
   font-size: 40px;
   font-weight: 600;
-
 }
 
 .date {
@@ -27,11 +27,10 @@
 }
 
 .title {
-  gap: 6px;
+  margin-top: -6px;
   font-size: 32px;
   transition: all 0.3s ease;
   cursor: pointer;
-  margin: 0 0 -3px 0;
 }
 
 .title_logo {
@@ -42,4 +41,14 @@
 
 .title:active {
   transform: scale(0.99);;
+}
+
+@media (max-width: 375px) {
+  .title {
+    font-size: 26px;
+  }
+
+  .title_logo {
+    font-size: 1.2rem;
+  }
 }

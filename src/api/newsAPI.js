@@ -1,11 +1,12 @@
 import axios from 'axios';
+import {MAIN_PAGE_SIZE} from '../constants/constants.js';
 
 const BASE_URL = import.meta.env.VITE_NEWS_BASE_API_URL;
 const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
 
 export const getNews = async ({
   page_number = 1,
-  page_size = 8,
+  page_size = MAIN_PAGE_SIZE,
   category = 'All',
   keywords,
 }) => {

@@ -40,3 +40,19 @@ a:visited, a {
   padding: 24px;
   min-height: 100vh;
 }
+
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-corner,
+::-webkit-resizer {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--loading-bg);
+}

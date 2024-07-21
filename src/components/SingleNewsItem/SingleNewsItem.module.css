@@ -6,6 +6,7 @@
   border-radius: 6px;
   transition: background-color 0.2s;
   cursor: default;
+  border: 2px solid var(--grey);
 }
 
 .title {
@@ -35,12 +36,12 @@
 
 @media (hover: hover) {
   .item:hover {
-    background-color: #00000022;
+    background-color: var(--grey);
   }
 }
 
 @media (hover: none) {
   .item:active {
-    background-color: #00000022;
+    background-color: var(--grey);
   }
 }

@@ -17,7 +17,7 @@ const Pagination = ({
   return (
     <div className={styles.wrapper}>
       <div className={styles.buttons}>
-        <button onClick={goToFirstPage} className={styles.btn}
+        <button onClick={goToFirstPage} className={styles.jumper}
                 disabled={currentPage <= 1}><MdFirstPage/></button>
         <button onClick={previousPageHandler} disabled={currentPage <= 1}
                 className={styles.arrow}><MdNavigateBefore/></button>
@@ -26,7 +26,7 @@ const Pagination = ({
       <div className={styles.buttons}>
         <button onClick={nextPageHandler} disabled={currentPage >= totalPages}
                 className={styles.arrow}><MdNavigateNext/></button>
-        <button onClick={goToLastPage} className={styles.btn}
+        <button onClick={goToLastPage} className={styles.jumper}
                 disabled={currentPage >= totalPages}><MdLastPage/></button>
       </div>
     </div>

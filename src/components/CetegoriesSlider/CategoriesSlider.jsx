@@ -6,6 +6,8 @@ const CategoriesSlider = ({
   setSelectedCategory,
   selectedCategory,
 }) => {
+  // const ref = useRef();
+  // const {event} = useDraggable(ref);
 
   return (
     <div className={styles.wrapper}>

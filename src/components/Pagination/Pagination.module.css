@@ -17,7 +17,7 @@
   gap: 10px;
 }
 
-.btn {
+.jumper {
   font-size: 16px;
   border: none;
   background-color: transparent;
@@ -29,6 +29,16 @@
   border-radius: 4px;
   transition: all 0.3s;
   user-select: none;
+}
+
+.jumper:active {
+  transform: scale(1.3);
+}
+
+.jumper:disabled {
+  pointer-events: none;
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 .arrow {
@@ -52,17 +62,10 @@
   box-shadow: var(--bgcolor) 0 0 10px 2px;
 }
 
-.btn:active {
-  transform: scale(1.3);
-}
-
 .arrow:disabled {
   pointer-events: none;
   background-color: var(--loading-bg);
-  color: var(--primary-text-color);
+  color: var(--bgcolor);
 }
 
-.btn:disabled {
-  pointer-events: none;
-  color: var(--secondary-text-color);
-}
+

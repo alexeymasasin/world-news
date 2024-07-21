@@ -5,7 +5,24 @@
   align-items: flex-start;
   overflow-x: auto;
   white-space: nowrap;
-  scrollbar-width: none;
+  padding-bottom: 6px;
+}
+
+.wrapper::-webkit-scrollbar {
+  height: 4px;
+  background-color: var(--grey);
+  border-radius: 3px;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background-color: var(--contrast-bgcolor);
+  border-radius: 3px;
+  padding: 3px;
+  cursor: grab;
+}
+
+.wrapper::-webkit-scrollbar-thumb:active {
+  cursor: grabbing;
 }
 
 .item, .active {
@@ -26,6 +43,8 @@
   border: 1px solid var(--contrast-bgcolor);
 }
 
-::-webkit-scrollbar {
-  display: none;
+@media (max-width: 768px) {
+  .wrapper::-webkit-scrollbar {
+    height: 6px;
+  }
 }

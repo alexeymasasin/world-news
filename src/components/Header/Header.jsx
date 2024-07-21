@@ -7,7 +7,7 @@ import {RxHamburgerMenu} from 'react-icons/rx';
 
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <header className={styles.wrapper}>
       <div className={styles.left}>
         <NavLink to="/">
           <h1 className={styles.title}>WORLD NEWS <RiNewsFill

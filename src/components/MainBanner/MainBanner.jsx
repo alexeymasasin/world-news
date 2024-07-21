@@ -1,7 +1,6 @@
 import styles from './MainBanner.module.css';
 import Image from './../Image/Image';
 import {timeAgoFormat} from '../../helpers/timeAgoFormat.js';
-import componentWithSkeleton from '../../hocs/ComponentWithSkeleton.jsx';
 
 const MainBanner = ({item}) => {
   return (
@@ -15,6 +14,4 @@ const MainBanner = ({item}) => {
   );
 };
 
-const MainBannerWithSkeleton = componentWithSkeleton(MainBanner, 'banner', 1);
-
-export default MainBannerWithSkeleton;
+export default MainBanner;

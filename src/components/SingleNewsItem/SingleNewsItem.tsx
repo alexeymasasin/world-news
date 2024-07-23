@@ -1,5 +1,5 @@
 import styles from './SingleNewsItem.module.css';
-import {timeAgoFormat} from '../../helpers/timeAgoFormat.js';
+import {timeAgoFormat} from '../../helpers/timeAgoFormat.ts';
 
 const SingleNewsItem = ({item}) => {
   return (

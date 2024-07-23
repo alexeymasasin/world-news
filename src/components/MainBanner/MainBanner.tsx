@@ -1,6 +1,6 @@
 import styles from './MainBanner.module.css';
-import MainBannerImage from '../MainBannerImage/MainBannerImage.jsx';
-import {timeAgoFormat} from '../../helpers/timeAgoFormat.js';
+import MainBannerImage from '../MainBannerImage/MainBannerImage.tsx';
+import {timeAgoFormat} from '../../helpers/timeAgoFormat.ts';
 
 const MainBanner = ({item}) => {
   return (

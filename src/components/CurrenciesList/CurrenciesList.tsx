@@ -1,6 +1,6 @@
 import styles from './CurrenciesList.module.css';
-import {useFetch} from '../../hooks/useFetch.js';
-import {exchangeRates} from '../../api/currenciesAPI.js';
+import {useFetch} from '../../hooks/useFetch.ts';
+import {exchangeRates} from '../../api/currenciesAPI.ts';
 
 const CurrenciesList = () => {
   const {data: currencies} = useFetch(exchangeRates, {

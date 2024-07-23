@@ -1,6 +1,6 @@
 import styles from './BannersList.module.css';
-import componentWithSkeleton from '../../hocs/ComponentWithSkeleton.jsx';
-import MainBanner from '../MainBanner/MainBanner.jsx';
+import componentWithSkeleton from '../../hocs/ComponentWithSkeleton.tsx';
+import MainBanner from '../MainBanner/MainBanner.tsx';
 
 const BannersList = ({banners}) => {
   return (

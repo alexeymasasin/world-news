@@ -3,15 +3,15 @@ import {
   FILTERS_PAGE_SIZE,
   MAIN_PAGE_SIZE,
   TOTAL_PAGES,
-} from '../../constants/constants.js';
-import NewsList from '../NewsList/NewsList.jsx';
-import NewsFilters from '../NewsFilters/NewsFilters.jsx';
-import {useFilters} from '../../hooks/useFilters.js';
-import {useDebounce} from '../../hooks/useDebounce.js';
-import {useFetch} from '../../hooks/useFetch.js';
-import {getNews} from '../../api/newsAPI.js';
-import PaginationWrapper from '../PaginationWrapper/PaginationWrapper.jsx';
-import SectionHeading from '../SectionHeading/SectionHeading.jsx';
+} from '../../constants/constants.ts';
+import NewsList from '../NewsList/NewsList.tsx';
+import NewsFilters from '../NewsFilters/NewsFilters.tsx';
+import {useFilters} from '../../hooks/useFilters.ts';
+import {useDebounce} from '../../hooks/useDebounce.ts';
+import {useFetch} from '../../hooks/useFetch.ts';
+import {getNews} from '../../api/newsAPI.ts';
+import PaginationWrapper from '../PaginationWrapper/PaginationWrapper.tsx';
+import SectionHeading from '../SectionHeading/SectionHeading.tsx';
 
 const NewsByFilters = () => {
   const {filters, changeFilter} = useFilters({

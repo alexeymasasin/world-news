@@ -1,10 +1,10 @@
-import {dateFormat} from './../../helpers/dateFormat';
+import {dateFormat} from './../../helpers/dateFormat.ts';
 import styles from './Header.module.css';
-import HeaderButton from '../UI/Header/Button.jsx';
+import HeaderButton from '../UI/Header/Button.tsx';
 import {RiNewsFill} from 'react-icons/ri';
 import {NavLink} from 'react-router-dom';
 import {RxHamburgerMenu} from 'react-icons/rx';
-import CurrenciesList from '../CurrenciesList/CurrenciesList.jsx';
+import CurrenciesList from '../CurrenciesList/CurrenciesList.tsx';
 
 const Header = () => {
   const pageReloadHandler = window.location.reload;

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {MAIN_PAGE_SIZE} from '../constants/constants.js';
+import {MAIN_PAGE_SIZE} from '../constants/constants.ts';
 
 const BASE_URL = import.meta.env.VITE_NEWS_BASE_API_URL;
 const API_KEY = import.meta.env.VITE_NEWS_API_KEY;

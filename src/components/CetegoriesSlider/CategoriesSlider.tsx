@@ -1,5 +1,5 @@
 import styles from './CategoriesSlider.module.css';
-import {capitalize} from '../../helpers/capitalize.js';
+import {capitalize} from '../../helpers/capitalize.ts';
 
 const CategoriesSlider = ({
   categories,

@@ -1,4 +1,4 @@
-import Skeleton from '../components/Skeleton/Skeleton.jsx';
+import Skeleton from '../components/Skeleton/Skeleton.tsx';
 
 function componentWithSkeleton(Component, type, blocksCount, direction) {
   return function componentWithSkeleton(props) {

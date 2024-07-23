@@ -1,7 +1,7 @@
 import styles from './NewsList.module.css';
 import {v4 as uuidv4} from 'uuid';
-import SingleNewsItem from '../SingleNewsItem/SingleNewsItem.jsx';
-import componentWithSkeleton from '../../hocs/ComponentWithSkeleton.jsx';
+import SingleNewsItem from '../SingleNewsItem/SingleNewsItem.tsx';
+import componentWithSkeleton from '../../hocs/ComponentWithSkeleton.tsx';
 
 const NewsList = ({news}) => {
 

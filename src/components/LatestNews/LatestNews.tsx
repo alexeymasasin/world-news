@@ -1,8 +1,8 @@
 import styles from './LatestNews.module.css';
-import BannersList from '../BannersList/BannersList.jsx';
-import {useFetch} from '../../hooks/useFetch.js';
-import {getLatestNews} from '../../api/newsAPI.js';
-import SectionHeading from '../SectionHeading/SectionHeading.jsx';
+import BannersList from '../BannersList/BannersList.tsx';
+import {useFetch} from '../../hooks/useFetch.ts';
+import {getLatestNews} from '../../api/newsAPI.ts';
+import SectionHeading from '../SectionHeading/SectionHeading.tsx';
 
 const LatestNews = () => {
   const {data, loading, error} = useFetch(getLatestNews);

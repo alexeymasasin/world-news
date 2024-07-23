@@ -15,6 +15,6 @@ const NewsList = ({news}) => {
   );
 };
 
-const NewsListWithSkeleton = componentWithSkeleton(NewsList, 'item', 10);
+const NewsListWithSkeleton = componentWithSkeleton(NewsList, 'item', 6);
 
 export default NewsListWithSkeleton;

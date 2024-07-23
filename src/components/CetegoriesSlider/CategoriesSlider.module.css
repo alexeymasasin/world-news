@@ -43,9 +43,3 @@
   font-weight: 500;
   border: 1px solid var(--contrast-bgcolor);
 }
-
-@media (max-width: 768px) {
-  .wrapper::-webkit-scrollbar {
-    height: 6px;
-  }
-}

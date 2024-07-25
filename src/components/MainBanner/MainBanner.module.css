@@ -9,10 +9,6 @@
 	user-select: none;
 }
 
-.wrapper:active {
-	transform: scale(0.98);
-}
-
 .textbox {
 	display: flex;
 	flex-direction: column;
@@ -35,6 +31,10 @@
 .extra {
 	font-size: 12px;
 	color: var(--secondary-text-color);
+}
+
+.wrapper:active {
+	transform: translateY(-2px);
 }
 
 @media (hover: hover) {

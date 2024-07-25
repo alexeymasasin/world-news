@@ -2,6 +2,7 @@
 	display: inline-block;
 	width: fit-content;
 	font-size: 32px;
+	user-select: none;
 }
 
 .underline {

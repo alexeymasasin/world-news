@@ -1,25 +1,38 @@
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 
-export const useFetch = (fetchFn, params) => {
-  const [data, setData] = useState(null);
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(true);
+interface FetchFn<P, T> {
+	(params?: P): Promise<T>;
+}
 
-  const strParams = params ? new URLSearchParams(params).toString() : '';
+interface UseFetchRes<T> {
+	data: T | null | undefined;
+	isLoading: boolean;
+	error: Error | null;
+}
 
-  useEffect(() => {
-    (async () => {
-      try {
-        setLoading(true);
-        const response = await fetchFn(params);
-        setData(response);
-      } catch (error) {
-        setError(error);
-      } finally {
-        setLoading(false);
-      }
-    })();
-  }, [fetchFn, strParams]);
+export const useFetch = <T, P>(
+	fetchFn: FetchFn<P, T>,
+	params?: P
+): UseFetchRes<T> => {
+	const [data, setData] = useState<T | null>(null);
+	const [error, setError] = useState<Error | null>(null);
+	const [loading, setLoading] = useState<boolean>(true);
 
-  return {data, loading, error};
+	const strParams = params ? new URLSearchParams(params).toString() : '';
+
+	useEffect(() => {
+		(async () => {
+			try {
+				setLoading(true);
+				const response = await fetchFn(params);
+				setData(response);
+			} catch (error) {
+				setError(error as Error);
+			} finally {
+				setLoading(false);
+			}
+		})();
+	}, [fetchFn, strParams]);
+
+	return { data, loading, error };
 };

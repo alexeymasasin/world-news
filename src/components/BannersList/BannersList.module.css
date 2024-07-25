@@ -1,27 +1,28 @@
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  width: 100%;
-  gap: 12px;
-  max-height: 740px;
-  overflow-y: auto;
-  padding-right: 10px;
-  border-radius: 6px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	width: 100%;
+	gap: 12px;
+	max-height: 634px;
+	overflow-y: auto;
+	padding-right: 10px;
+	border-radius: 6px;
 }
 
 .wrapper::-webkit-scrollbar {
-  width: 4px;
-  background-color: var(--grey);
-  border-radius: 3px;
+	width: 4px;
+	background-color: var(--grey);
+	border-radius: 3px;
+	display: inherit;
 }
 
 .wrapper::-webkit-scrollbar-thumb {
-  background-color: var(--contrast-bgcolor);
-  border-radius: 3px;
-  padding: 3px;
-  cursor: grab;
+	background-color: var(--contrast-bgcolor);
+	border-radius: 3px;
+	padding: 3px;
+	cursor: grab;
 }
 
 .wrapper::-webkit-scrollbar-thumb:active {
-  cursor: grabbing;
+	cursor: grabbing;
 }

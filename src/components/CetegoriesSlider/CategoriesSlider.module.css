@@ -1,45 +1,47 @@
 .wrapper {
-  display: flex;
-  width: 100%;
-  gap: 6px;
-  align-items: flex-start;
-  overflow-x: auto;
-  white-space: nowrap;
-  padding-bottom: 6px;
+	display: flex;
+	width: 100%;
+	gap: 6px;
+	align-items: flex-start;
+	overflow-x: auto;
+	white-space: nowrap;
+	padding-bottom: 6px;
 }
 
 .wrapper::-webkit-scrollbar {
-  height: 4px;
-  background-color: var(--grey);
-  border-radius: 3px;
+	height: 4px;
+	background-color: var(--grey);
+	border-radius: 3px;
+	display: inherit;
 }
 
 .wrapper::-webkit-scrollbar-thumb {
-  background-color: var(--contrast-bgcolor);
-  border-radius: 3px;
-  padding: 3px;
-  cursor: grab;
+	background-color: var(--contrast-bgcolor);
+	border-radius: 3px;
+	padding: 3px;
+	cursor: grab;
 }
 
 .wrapper::-webkit-scrollbar-thumb:active {
-  cursor: grabbing;
+	cursor: grabbing;
 }
 
-.item, .active {
-  display: flex;
-  align-items: center;
-  padding: 4px 10px;
-  border-radius: 16px;
-  cursor: pointer;
-  background-color: var(--grey);
-  border: 1px solid var(--grey);
-  color: var(--primary-text-color);
-  transition: all 0.3s;
-  user-select: none;
+.item,
+.active {
+	display: flex;
+	align-items: center;
+	padding: 4px 10px;
+	border-radius: 16px;
+	cursor: pointer;
+	background-color: var(--grey);
+	border: 1px solid var(--grey);
+	color: var(--primary-text-color);
+	transition: all 0.3s;
+	user-select: none;
 }
 
 .active {
-  color: var(--contrast-bgcolor);
-  font-weight: 500;
-  border: 1px solid var(--contrast-bgcolor);
+	color: var(--contrast-bgcolor);
+	font-weight: 500;
+	border: 1px solid var(--contrast-bgcolor);
 }

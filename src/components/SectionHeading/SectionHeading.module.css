@@ -1,12 +1,12 @@
 .title {
-  display: inline-block;
-  width: fit-content;
-  font-size: 32px;
+	display: inline-block;
+	width: fit-content;
+	font-size: 32px;
 }
 
 .underline {
-  background-color: var(--contrast-bgcolor);
-  height: 2px;
-  width: 100%;
-  border-radius: 6px;
+	background-color: var(--contrast-bgcolor);
+	height: 2px;
+	width: 100%;
+	border-radius: 6px;
 }

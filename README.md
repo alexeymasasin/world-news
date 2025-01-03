@@ -1,8 +1,8 @@
 <h1> World News App (React.js) </h1>
 
 <p>
-Welcome to my Tech News App – a simple news-web application developed & designed by me to help you 
-stay up to date with the latest news by keeping them all right in your browser tab
+Welcome to my News App – a simple news-web application developed & designed by me to help you 
+stay up to date with the latest news
 </p>
 
 ## Current Release
